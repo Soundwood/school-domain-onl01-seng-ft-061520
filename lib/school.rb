@@ -19,7 +19,8 @@ class School
   def grade(grade_num)
     @roster[grade_num]
   end
-  def sort 
+  def sort
+    @roster = @roster.sort_by(&:first)
   end
 end
     
